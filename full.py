@@ -1,7 +1,7 @@
 import telebot
 import mysql.connector
 print('Initializing Service...')
-bot=telebot.TeleBot('7118472107:AAH12P5cqTcHhySMgGhWEV2grvESLWuLP40')
+bot=telebot.TeleBot('TELEGRAM API TOKEN FROM BOT FATHER')
 connection = mysql.connector.connect( 
     password='2Kv3SdxgkY',
     user='sql12745700',
