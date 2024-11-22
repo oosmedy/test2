@@ -5,7 +5,7 @@ bot=telebot.TeleBot('TELEGRAM API TOKEN FROM BOT FATHER')
 connection = mysql.connector.connect( 
     password='2Kv3SdxgkY',
     user='sql12745700',
-    host='52.76.27.242',
+    host='localhost',
     database='sql12745700',
     )
 mycursor=connection.cursor()
@@ -20,7 +20,8 @@ def welcome(message):
     bot.reply_to(message,'recived messsage✅')
     #datalogger(message)
     mess="🔴From :"+message.chat.first_name+"\n message :⬇️⬇️⬇️ \n"+message.text
-    bot.send_message(6269684719,mess)
+    ownerid=0000000
+    bot.send_message(ownerid,mess)
     print('New Message From ',message.chat.first_name,"ID:",message.chat.id)
     
 print('Normal Status')    
